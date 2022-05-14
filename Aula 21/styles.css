@@ -1,0 +1,27 @@
+.p{
+    color: red; 
+    /*borda em volta*/
+    border: 4px double darkgrey
+    /*solid - total sólida*/
+}
+
+.h1{
+    color: yellow;
+    /*fundo*/
+    background-color: green;
+    /*tamanho da fonte*/
+    font-size: 25px;
+    /*borda tracejado*/
+    border: 4px dashed darkgrey
+}
+
+.p2{
+    color: orange;
+    /*fonte*/
+    font: "Comic Sans MS";
+    /*borda pontilhada*/
+    border: 4px dotted darkgrey;
+    font-size: 25px
+    }
+
+/**/
