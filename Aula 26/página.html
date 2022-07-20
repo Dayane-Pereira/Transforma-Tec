@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do BEM</title>
+    
+    <style>
+
+.container{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.container__form{
+    background-color:burlywood;
+    padding: 10px;
+}
+
+/* não preciso colocar o end inteiro do container- ex: container__form__input "já q tem um input dentro do container
+não preciso contextualizar isso" - sempre colocar o "class"    */
+.container__input{
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px; 
+}
+
+.container__submit{
+    background-color: green;
+    border-radius: 5px;
+    color: white; 
+}
+
+.container__header{
+    font-size: 12px sans-serif;
+    color: brown;
+}
+
+/* modificador no css */
+.container__header--color{
+    color:orange;
+}
+
+/* testando o hover,usando o modificador */
+.container__submit--hover:hover {
+    background-color: white;
+    color: blue;
+}
+
+/* testando o active- mudar o botão de cor qundo clicado */
+.container__submit--active:active{
+    background-color: aqua;
+    color:blueviolet;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+    <!-- o container é destacado como o maior, assim como o "wrapper" tem o mesmo sentido -->
+<div class="container">
+
+
+    <!-- o modificador é separado por 2 traços, e se sobre sai em cima do container, lembrando que tem que
+    colocar na junto na classe -->
+    <h1 class="container__header container__header--color">Meu formulário</h1>
+
+
+    <!-- é destacado primeiro o container/wrapper, com dois underlines vem a tag que vai fixar dentro.
+    E xemplo: "container__aside" "container__footer" e assim por diante -->
+    <form action="" class="container__form">
+    
+        <input type="text" placeholder="Nome" class="container__input">
+        <input type="password" placeholder="Senha" class="container__input">
+        <input type="submit" value="Entrar" class="container__submit   container__submit--hover 
+        container__submit--active"> 
+
+
+    </form>
+
+    
+
+</div>
+
+</body>
+</html>
